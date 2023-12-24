@@ -1,0 +1,24 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-3">
+                <div class="logo">
+                    <img src="assets/hano_logo.png" class="logo" alt="">
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-9 text-end">
+                <div class="menu-icon" (click)="openMenu()">
+                    <i class="{{menu_icon}}"></i>
+                </div>
+                <div class="desktop_menu" [class.mobile_menu]="menuValue">
+                    <ul>
+                        <li (click)="closeMenu()">Home</li>
+                        <li (click)="closeMenu()">About</li>
+                        <li (click)="closeMenu()">Courses</li>
+                        <li (click)="closeMenu()">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
